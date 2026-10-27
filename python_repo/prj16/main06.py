@@ -1,0 +1,21 @@
+# 상속 (seper)
+from os import name
+
+
+class Drink:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def print_info(self):
+        print("나는 드링크야")
+
+class Coffee(Drink):
+    def __init__(self, shot,a,b):
+        super().__init__(a, b)
+        self.shot = shot
+
+x = Coffee(2, "라떼", 2000)
+print(x.name)
+print(x.price)
+print(x.shot)
