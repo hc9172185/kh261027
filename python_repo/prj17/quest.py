@@ -1,0 +1,3 @@
+import abcd
+
+print(abcd)
